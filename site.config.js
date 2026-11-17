@@ -16,7 +16,7 @@ export default {
   siteUrl: 'https://ampara-corsu.vercel.app',
 
   // Adresse publique de l'application (destination de « Ouvrir Amparà »).
-  appUrl: '',
+  appUrl: 'https://ampara-app-virid.vercel.app',
 
   // Adresse e-mail de contact / support réellement relevée.
   contactEmail: 'ampara.corsu@gmail.com',
@@ -45,7 +45,7 @@ export default {
 
   // Informations nécessaires avant l'ouverture des ventes.
   offer: {
-    freeScope: '',     // Contenu exact de la découverte gratuite
+    freeScope: 'la première escale « Salutations et présentation » (5 leçons), avec son carnet de mots et ses révisions espacées ; le coach IA et les escales suivantes sont réservés à Premium', // Contenu exact de la découverte gratuite
     aiQuota: '',       // Limite d'usage du coach IA et comportement à la limite
     taxDisplay: '',    // Mention fiscale validée pour le prix (ex. « TTC »)
     refundPolicy: '',  // Modalités de rétractation / remboursement validées
