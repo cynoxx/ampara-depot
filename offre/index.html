@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--@include head-->
+    <title>L’offre — Amparà</title>
+    <meta name="description" content="Découverte gratuite limitée, puis Amparà Premium : 3 jours offerts avec carte demandée au départ, puis 20 € par an, renouvelés automatiquement sauf résiliation.">
+  </head>
+  <body data-page="offre">
+    <!--@include header-->
+    <main id="contenu">
+      <section class="page-hero" aria-labelledby="t">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow">L’offre de lancement</p>
+          <h1 id="t">Fais une place au corse. Pour toute l’année.</h1>
+          <p>Une découverte gratuite pour essayer la méthode, puis Premium&nbsp;: trois jours offerts, puis 20&nbsp;€ par an.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="formules">
+        <div class="wrap">
+          <h2 id="formules" class="sr-only">Formules</h2>
+          <!--@include offer-->
+        </div>
+      </section>
+
+      <section class="section section--tint" aria-labelledby="trial">
+        <div class="wrap wrap--narrow">
+          <header class="section__head reveal">
+            <p class="eyebrow">L’essai, pas à pas</p>
+            <h2 id="trial" class="section__title">Comment se déroulent les trois jours.</h2>
+          </header>
+          <ol class="steps">
+            <li class="step reveal"><span class="step__n">J0</span><h3>Tu démarres l’essai</h3><p>Ta carte est demandée sur la page de paiement sécurisée de Stripe. Rien n’est prélevé ce jour-là.</p></li>
+            <li class="step reveal"><span class="step__n">J1–3</span><h3>Tu profites de Premium</h3><p>Tout Premium est ouvert pendant trois jours. Tu peux résilier à tout moment depuis ton espace de facturation.</p></li>
+            <li class="step reveal"><span class="step__n">J3</span><h3>Fin de l’essai</h3><p>Sans résiliation, 20&nbsp;€ sont prélevés pour un an, puis l’abonnement se renouvelle chaque année. Si tu as résilié, tu n’es pas prélevé.</p></li>
+          </ol>
+          <div class="prose reveal">
+            <p>Un seul essai par compte. Le paiement est opéré par Stripe&nbsp;: Amparà n’a pas accès au numéro de ta carte. Les conditions complètes sont détaillées dans les <a href="/conditions/">conditions de l’offre</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-title">
+        <div class="wrap wrap--narrow">
+          <header class="section__head reveal">
+            <p class="eyebrow">Questions</p>
+            <h2 id="faq-title" class="section__title">Avant de te lancer.</h2>
+          </header>
+          <!--@include faq-->
+        </div>
+      </section>
+    </main>
+    <!--@include footer-->
+  </body>
+</html>

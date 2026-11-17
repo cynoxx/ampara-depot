@@ -1,0 +1,35 @@
+<a class="skip" href="#contenu">Aller au contenu</a>
+<!--@if preopen-->
+<aside class="status-bar" aria-label="Statut du lancement"><span class="status-dot" aria-hidden="true"></span> Amparà prépare son ouverture. Aucun abonnement n’est encore en vente.</aside>
+<!--@endif-->
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/" aria-label="Amparà, accueil">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" class="brand__disc"/>
+        <circle cx="20" cy="15" r="6.5" class="brand__sun"/>
+        <path d="M6 25.5c3.2-2.6 6.4-2.6 9.6 0s6.4 2.6 9.6 0 6.4-2.6 9.6 0" class="brand__wave"/>
+        <path d="M8 31c3-2.2 6-2.2 9 0s6 2.2 9 0 6-2.2 9 0" class="brand__wave brand__wave--2"/>
+      </svg>
+      <span class="brand__name">Amparà</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="menu" class="nav" aria-label="Navigation principale" data-nav-menu>
+      <ul class="nav__list">
+        <li><a class="nav__link" data-nav="methode" href="/methode/">Méthode</a></li>
+        <li><a class="nav__link" data-nav="offre" href="/offre/">Offre</a></li>
+        <li><a class="nav__link" href="/#questions">Questions</a></li>
+        <li><a class="nav__link" data-nav="contact" href="/contact/">Contact</a></li>
+      </ul>
+      <!--@if preopen-->
+      <a class="btn btn--small btn--primary nav__cta" href="/offre/">Voir l’offre</a>
+      <!--@endif-->
+      <!--@if open-->
+      <a class="btn btn--small btn--primary nav__cta" href="{{appUrl}}">Ouvrir Amparà</a>
+      <!--@endif-->
+    </nav>
+  </div>
+</header>

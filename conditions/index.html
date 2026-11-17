@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--@include head-->
+    <title>Conditions de l’offre — Amparà</title>
+    <meta name="description" content="Conditions de l’offre Amparà : découverte gratuite, essai Premium de 3 jours avec carte, puis 20 € par an renouvelés automatiquement, résiliation et paiement.">
+  </head>
+  <body data-page="conditions">
+    <!--@include header-->
+    <main id="contenu">
+      <section class="page-hero" aria-labelledby="t">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow">Informations</p>
+          <h1 id="t">Conditions de l’offre</h1>
+          <p>Dernière mise à jour&nbsp;: {{updated}}.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Contenu">
+        <div class="wrap">
+          <div class="prose">
+            <!--@if preopen-->
+            <div class="draft" role="note">
+              <strong>Document de travail — aucune vente en cours</strong>
+              <p>L’abonnement n’est pas encore commercialisé. Ces conditions décrivent l’offre prévue au lancement&nbsp;; elles seront finalisées et validées avant toute vente.</p>
+            </div>
+            <!--@endif-->
+
+            <h2>1. Le service</h2>
+            <p>Amparà est une application web d’apprentissage du corse, éditée par {{f:publisher.name|nom légal de l’éditeur}}. Elle propose un parcours de leçons, un carnet de mots, des révisions espacées, un suivi de progression et un coach fondé sur l’intelligence artificielle.</p>
+
+            <h2>2. La découverte gratuite</h2>
+            <p>Une partie du contenu est accessible gratuitement, sans carte bancaire. Contenu exact&nbsp;: {{f:offer.freeScope|périmètre de la découverte gratuite}}.</p>
+
+            <h2>3. Amparà Premium</h2>
+            <p>Premium donne accès à l’ensemble du parcours disponible (repères A0–A1), au carnet et aux révisions personnalisées, au suivi détaillé de la progression, à la comparaison des variantes, aux ressources audio et au coach IA.</p>
+            <p>Limites d’usage du coach IA&nbsp;: {{f:offer.aiQuota|quota du coach IA et comportement à la limite}}. Le coach n’est pas illimité.</p>
+
+            <h2>4. Essai gratuit de trois jours</h2>
+            <ul>
+              <li>L’essai dure trois jours. Un moyen de paiement est demandé au départ.</li>
+              <li>Aucun montant n’est prélevé pendant l’essai.</li>
+              <li>Si tu résilies avant la fin de l’essai, tu n’es pas prélevé et l’accès Premium prend fin au terme de l’essai.</li>
+              <li>Sans résiliation, l’abonnement annuel démarre automatiquement à la fin de l’essai.</li>
+              <li>Un seul essai par compte. Un compte ayant déjà bénéficié de l’abonnement n’a pas droit à un nouvel essai.</li>
+            </ul>
+
+            <h2>5. Prix et renouvellement</h2>
+            <p>L’abonnement Premium coûte 20&nbsp;€ par an ({{f:offer.taxDisplay|mention fiscale du prix}}). Il se renouvelle automatiquement chaque année, à la date anniversaire, sauf résiliation.</p>
+
+            <h2>6. Résiliation</h2>
+            <p>Tu peux résilier à tout moment depuis ton espace de facturation sécurisé, accessible dans l’application. La résiliation prend effet à la fin de la période en cours (essai ou année payée)&nbsp;; l’accès Premium reste ouvert jusque-là.</p>
+
+            <h2>7. Paiement</h2>
+            <p>Le paiement est traité par Stripe. Amparà n’a pas accès au numéro complet de ta carte. Tes factures sont disponibles dans ton espace de facturation. En cas d’échec de paiement, l’accès Premium n’est pas ouvert.</p>
+
+            <h2>8. Rétractation et remboursement</h2>
+            <p>{{f:offer.refundPolicy|modalités de rétractation et de remboursement}}</p>
+
+            <h2>9. Contenu pédagogique</h2>
+            <p>Amparà est un outil d’apprentissage. Il ne délivre aucune certification de niveau. Le contenu est enrichi et relu progressivement&nbsp;; les réponses du coach IA sont indicatives et peuvent contenir des erreurs. Le fonds de prononciations humaines est partiel. Les niveaux A2 et B1 sont en préparation et ne font pas partie de l’offre actuelle.</p>
+
+            <h2>10. Contact</h2>
+            <p>{{mail}}</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--@include footer-->
+  </body>
+</html>

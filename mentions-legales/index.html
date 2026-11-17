@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--@include head-->
+    <title>Mentions légales — Amparà</title>
+    <meta name="description" content="Mentions légales du site Amparà : éditeur, directeur de la publication, hébergeur et contact.">
+  </head>
+  <body data-page="mentions-legales">
+    <!--@include header-->
+    <main id="contenu">
+      <section class="page-hero" aria-labelledby="t">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow">Informations</p>
+          <h1 id="t">Mentions légales</h1>
+          <p>Dernière mise à jour&nbsp;: {{updated}}.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Contenu">
+        <div class="wrap">
+          <div class="prose">
+            <!--@if draft-->
+            <div class="draft" role="note">
+              <strong>Document de travail</strong>
+              <p>Ces mentions ne sont pas définitives. Informations à fournir avant la publication définitive&nbsp;:</p>
+              {{missing}}
+            </div>
+            <!--@endif-->
+
+            <h2>Éditeur du site</h2>
+            <dl>
+              <dt>Nom</dt><dd>{{f:publisher.name|nom légal de l’éditeur}}</dd>
+              <dt>Forme</dt><dd>{{f:publisher.legalForm|forme de l’activité}}</dd>
+              <dt>Adresse</dt><dd>{{f:publisher.address|adresse de l’éditeur}}</dd>
+              <dt>Identification</dt><dd>{{f:publisher.identifiers|identifiants de l’entreprise}}</dd>
+              <dt>Contact</dt><dd>{{mail}}</dd>
+            </dl>
+
+            <h2>Direction de la publication</h2>
+            <p>{{f:publisher.director|directeur ou directrice de la publication}}</p>
+
+            <h2>Hébergement</h2>
+            <dl>
+              <dt>Hébergeur</dt><dd>{{f:host.name|nom de l’hébergeur}}</dd>
+              <dt>Adresse</dt><dd>{{f:host.address|adresse de l’hébergeur}}</dd>
+              <dt>Téléphone</dt><dd>{{f:host.phone|téléphone de l’hébergeur}}</dd>
+            </dl>
+
+            <h2>Propriété intellectuelle</h2>
+            <p>Les textes, illustrations et le code de ce site sont des créations propres à Amparà, sauf mention contraire. Les éléments de tiers (polices, bibliothèque 3D, enregistrements sonores) sont utilisés selon leurs licences, détaillées sur la page <a href="/credits/">Crédits</a>.</p>
+            <p>Les liens vers des ressources externes sont fournis à titre d’information. Ces organismes ne sont pas partenaires d’Amparà et n’ont pas validé son contenu.</p>
+
+            <h2>Données personnelles</h2>
+            <p>Voir la page <a href="/confidentialite/">Confidentialité</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--@include footer-->
+  </body>
+</html>

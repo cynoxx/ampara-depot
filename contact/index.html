@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--@include head-->
+    <title>Contact — Amparà</title>
+    <meta name="description" content="Écrire à l’équipe d’Amparà : une question sur l’application, l’offre, une correction linguistique ou une proposition d’enregistrement.">
+  </head>
+  <body data-page="contact">
+    <!--@include header-->
+    <main id="contenu">
+      <section class="page-hero" aria-labelledby="t">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow">Contact</p>
+          <h1 id="t">Écris-nous.</h1>
+          <p>Une question sur l’application ou l’offre, une forme à corriger, une proposition d’enregistrementune proposition d’enregistrement&nbsp;? Écris-nous.nbsp;: nous serons heureux de te lire.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Coordonnées">
+        <div class="wrap wrap--narrow">
+          <!--@if draft-->
+          <div class="draft" role="note">
+            <strong>Page en cours de finalisation</strong>
+            <p>Le moyen de contact public n’a pas encore été communiqué. Il sera affiché ici avant la mise en ligne définitive.</p>
+          </div>
+          <!--@endif-->
+          <div class="cards">
+            <article class="card reveal">
+              <h2 class="feature__title">Par e-mail</h2>
+              <p>{{mail}}</p>
+              <p>Nous répondons dès que possible, en français.</p>
+            </article>
+            <article class="card reveal">
+              <h2 class="feature__title">Une correction&nbsp;?</h2>
+              <p>Si une forme, une variante ou une traduction te paraît inexacte, indique le mot concerné, la forme que tu proposes et, si possible, ta source. Les corrections des corsophones sont précieuses.</p>
+            </article>
+          </div>
+          <p class="note reveal">Il n’y a pas de formulaire sur ce site&nbsp;: ton message passe par ta messagerie, et rien n’est enregistré ici.</p>
+        </div>
+      </section>
+    </main>
+    <!--@include footer-->
+  </body>
+</html>

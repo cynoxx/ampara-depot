@@ -1,0 +1,39 @@
+<div class="offer-grid">
+  <article class="offer reveal" aria-labelledby="offer-free-title">
+    <p class="eyebrow">Découverte</p>
+    <h3 id="offer-free-title" class="offer__title">Le premier pas</h3>
+    <p class="offer__price">Gratuit</p>
+    <p class="offer__lead">Pour découvrir la méthode avant de t’engager. Sans carte.</p>
+    <ul class="checks">
+      <li>Premières leçons du parcours</li>
+      <li>Découverte des deux variantes</li>
+      <li>Premiers mots et révisions</li>
+    </ul>
+    <p class="offer__fine">La sélection gratuite exacte sera précisée avant l’ouverture.</p>
+  </article>
+
+  <article class="offer offer--premium reveal" aria-labelledby="offer-premium-title">
+    <p class="offer__badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z"/></svg> 3 jours offerts</p>
+    <p class="eyebrow">Premium</p>
+    <h3 id="offer-premium-title" class="offer__title">Le voyage continue</h3>
+    <p class="offer__price"><span class="num">20&nbsp;€</span> <span class="offer__per">/ an</span></p>
+    <ul class="checks">
+      <li>Tout le parcours disponible (A0–A1)</li>
+      <li>Carnet de mots et révisions personnalisées</li>
+      <li>Suivi détaillé de ta progression</li>
+      <li>Comparaison des variantes et ressources audio</li>
+      <li>Coach et conversations IA, avec des limites d’usage affichées avant tout achat</li>
+    </ul>
+    <div class="offer__terms">
+      <p><strong>3 jours pour découvrir Amparà Premium. Puis 20&nbsp;€ par an.</strong> Carte demandée au départ. L’abonnement se renouvelle automatiquement&nbsp;; résilie avant la fin de l’essai pour ne pas être prélevé.</p>
+    </div>
+    <!--@if preopen-->
+    <p class="offer__status"><span class="status-dot" aria-hidden="true"></span> Ouverture en préparation&nbsp;: l’abonnement n’est pas encore en vente.</p>
+    <a class="btn btn--primary btn--block" href="/conditions/">Lire les conditions de l’offre</a>
+    <!--@endif-->
+    <!--@if open-->
+    <a class="btn btn--primary btn--block" href="{{appUrl}}">Démarrer mes 3 jours gratuits</a>
+    <!--@endif-->
+    <p class="offer__fine">Un essai par compte. Gestion de la carte, des factures et de la résiliation depuis ton espace de facturation sécurisé (Stripe).</p>
+  </article>
+</div>

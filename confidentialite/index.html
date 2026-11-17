@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--@include head-->
+    <title>Confidentialité — Amparà</title>
+    <meta name="description" content="Ce que le site Amparà fait, et ne fait pas, de tes données : pas de cookie, pas de mesure d’audience, pas de formulaire.">
+  </head>
+  <body data-page="confidentialite">
+    <!--@include header-->
+    <main id="contenu">
+      <section class="page-hero" aria-labelledby="t">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="eyebrow">Informations</p>
+          <h1 id="t">Confidentialité</h1>
+          <p>Dernière mise à jour&nbsp;: {{updated}}.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Contenu">
+        <div class="wrap">
+          <div class="prose">
+            <!--@if draft-->
+            <div class="draft" role="note">
+              <strong>Document de travail</strong>
+              <p>Cette politique doit être relue et complétée par le responsable du site avant la publication définitive.</p>
+            </div>
+            <!--@endif-->
+
+            <h2>Ce site, en bref</h2>
+            <ul>
+              <li>Aucun cookie, aucune mesure d’audience, aucun pixel publicitaire.</li>
+              <li>Aucun formulaire&nbsp;: le site ne collecte ni nom, ni adresse e-mail.</li>
+              <li>Les polices, les scripts et les illustrations sont servis par le site lui-même&nbsp;: la consultation n’envoie pas de requête vers des services tiers.</li>
+              <li>Les liens externes (sources linguistiques, Wikimedia Commons) ne sont chargés que si tu cliques dessus.</li>
+            </ul>
+
+            <h2>Responsable</h2>
+            <p>{{f:publisher.name|nom légal du responsable}} — {{mail}}</p>
+
+            <h2>Journaux techniques de l’hébergement</h2>
+            <p>Comme pour tout site web, l’hébergeur ({{f:host.name|nom de l’hébergeur}}) peut enregistrer des informations techniques lors de ta visite (adresse IP, date, page demandée, navigateur) pour assurer le fonctionnement et la sécurité du service. Leur durée de conservation dépend de l’hébergeur&nbsp;: {{f:host.logRetention|durée de conservation des journaux de l’hébergeur}}.</p>
+
+            <h2>Si tu nous écris</h2>
+            <p>Ton message et ton adresse e-mail sont utilisés uniquement pour te répondre. Durée de conservation&nbsp;: {{f:privacy.emailRetention|durée de conservation des échanges}}.</p>
+
+            <h2>L’application Amparà</h2>
+            <p>L’application n’est pas encore ouverte au public. Elle aura sa propre politique de confidentialité, publiée avant l’ouverture. À titre d’information, la version actuellement développée s’appuie sur les services suivants&nbsp;:</p>
+            <ul>
+              <li><strong>Firebase (Google)</strong> — compte utilisateur et sauvegarde de la progression.</li>
+              <li><strong>Un prestataire d’e-mail</strong> — envoi des codes de connexion.</li>
+              <li><strong>Stripe</strong> — paiement et gestion de l’abonnement&nbsp;; Amparà n’a pas accès au numéro de carte.</li>
+              <li><strong>Google Gemini</strong> — les messages adressés au coach IA sont transmis à ce service pour générer une réponse.</li>
+            </ul>
+            <p>Les finalités, bases légales, durées de conservation et transferts éventuels hors de l’Union européenne seront précisés dans cette politique avant toute ouverture.</p>
+
+            <h2>Tes droits</h2>
+            <p>Tu disposes d’un droit d’accès, de rectification, d’effacement, d’opposition, de limitation et de portabilité sur les données te concernant. Pour l’exercer, écris à {{mail}}. Tu peux aussi adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes" rel="noopener" target="_blank">CNIL<span class="sr-only"> (nouvel onglet)</span></a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--@include footer-->
+  </body>
+</html>

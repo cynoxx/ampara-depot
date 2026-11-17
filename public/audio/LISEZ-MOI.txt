@@ -1,0 +1,4 @@
+Déposer ici les six fichiers de l'application (public/audio/ du projet Ampara) :
+co-bonifacio.ogg, co-bonifacio.mp3, co-bustanico.ogg, co-bustanico.mp3, co-serriera.ogg, co-serriera.mp3
+Quand les trois .mp3 sont présents, le site affiche des lecteurs audio au lieu des liens vers Wikimedia Commons.
+Licence : CC BY-SA 3.0, auteur Ruglianincu-esiliatu (voir la page Crédits).
