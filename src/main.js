@@ -1,9 +1,11 @@
 import './styles.css';
+import { initFx } from './fx.js';
 
 const root = document.documentElement;
 root.classList.add('js');
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+initFx(reduceMotion);
 
 /* ---------- En-tête : ombre au défilement ---------- */
 const header = document.querySelector('[data-header]');
@@ -101,4 +103,17 @@ if (stage && webglAvailable()) {
       });
   if ('requestIdleCallback' in window) requestIdleCallback(start, { timeout: 1200 });
   else setTimeout(start, 300);
+}
+
+/* ---------- Escales en 3D (chargées quand la section approche) ---------- */
+const steps = document.querySelector('[data-steps3d]');
+if (steps && webglAvailable() && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting) return;
+    io.disconnect();
+    import('./steps3d.js')
+      .then((m) => m.mountSteps(steps, { reduceMotion }))
+      .catch(() => { /* l'illustration SVG reste affichée */ });
+  }, { rootMargin: '400px 0px' });
+  io.observe(steps);
 }

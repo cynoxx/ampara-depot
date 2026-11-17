@@ -34,7 +34,7 @@
         <div class="wrap hero__inner">
           <div class="hero__copy">
             <p class="chip hero__eyebrow"><span class="chip__dot" aria-hidden="true"></span> Apprendre le corse · application web</p>
-            <h1 id="hero-title" class="hero__title">Fais une place au <span class="accent">corse</span> dans ton quotidien.</h1>
+            <h1 id="hero-title" class="hero__title" data-split>Fais une place au <span class="accent">corse</span> dans ton quotidien.</h1>
             <p class="hero__lead">Des leçons courtes, des mots à retrouver et un parcours qui avance avec toi. Découvre Amparà, une nouvelle façon d’apprendre le corse, à ton rythme.</p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="/methode/">Découvrir la méthode <span class="btn__arrow" aria-hidden="true">↗</span></a>
@@ -43,7 +43,7 @@
           </div>
 
           <div class="hero__cards">
-            <div class="glass glass--card">
+            <div class="glass glass--card lg" data-tilt>
               <div class="glass__head"><span>Séance courte</span><span class="tag">5 mots</span></div>
               <div class="ring-row">
                 <svg class="ring" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" class="ring__bg"/><circle cx="32" cy="32" r="26" class="ring__fg" pathLength="100"/></svg>
@@ -55,15 +55,22 @@
         <p class="hero__stage-note">Paysage stylisé, pas une carte.</p>
       </section>
 
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Leçons courtes</span><i></i><span>Carnet de mots</span><i></i><span>Révisions espacées</span><i></i><span>Escales A0 · A1</span><i></i><span>Variantes Nord &amp; Sud</span><i></i><span>Voix humaines</span><i></i><span>Coach pour pratiquer</span><i></i>
+          <span>Leçons courtes</span><i></i><span>Carnet de mots</span><i></i><span>Révisions espacées</span><i></i><span>Escales A0 · A1</span><i></i><span>Variantes Nord &amp; Sud</span><i></i><span>Voix humaines</span><i></i><span>Coach pour pratiquer</span><i></i>
+        </div>
+      </div>
+
       <!-- MAQUETTE -->
       <section class="showcase" aria-labelledby="exp-title">
         <div class="wrap showcase__head reveal">
           <p class="chip"><span class="chip__dot" aria-hidden="true"></span> L’expérience</p>
-          <h2 id="exp-title" class="section__title">Peu de temps, beaucoup de régularité.</h2>
+          <h2 id="exp-title" class="section__title" data-split>Peu de temps, beaucoup de régularité.</h2>
           <p class="section__lead">Apprendre des mots, les retrouver au bon moment et voir le chemin parcouru, dans une seule interface pensée pour le téléphone comme pour l’ordinateur.</p>
         </div>
 
-        <figure class="device" aria-labelledby="device-cap">
+        <figure class="device" aria-labelledby="device-cap" data-tilt>
           <p class="showcase__word" aria-hidden="true">AMPARÀ</p>
           <div class="device__frame">
             <div class="ui" aria-hidden="true">
@@ -110,22 +117,22 @@
 
         <div class="wrap">
           <div class="features">
-            <article class="feature glass reveal">
+            <article class="feature glass lg reveal" data-tilt>
               <span class="feature__n">01</span>
               <h3 class="feature__title">Leçons courtes</h3>
               <p>Quelques questions, une correction immédiate, et tu sais où tu en es. Pensées pour tenir dans une journée chargée.</p>
             </article>
-            <article class="feature glass reveal">
+            <article class="feature glass lg reveal" data-tilt>
               <span class="feature__n">02</span>
               <h3 class="feature__title">Carnet de mots</h3>
               <p>Retrouve les mots rencontrés, cherche sans te soucier des accents, garde tes favoris et consulte les sources associées quand elles existent.</p>
             </article>
-            <article class="feature glass reveal">
+            <article class="feature glass lg reveal" data-tilt>
               <span class="feature__n">03</span>
               <h3 class="feature__title">Révisions espacées</h3>
               <p>Les mots reviennent au bon moment. Une erreur les ramène plus vite, et une séance de cinq mots donne la priorité à ceux qui t’attendent.</p>
             </article>
-            <article class="feature glass reveal">
+            <article class="feature glass lg reveal" data-tilt>
               <span class="feature__n">04</span>
               <h3 class="feature__title">Tes acquis</h3>
               <p>Mots rencontrés, en apprentissage, consolidés ou à revoir, détaillés par escale. Un reflet de ton activité, pas un diplôme.</p>
@@ -139,7 +146,7 @@
         <div class="wrap">
           <header class="section__head reveal">
             <p class="eyebrow">Aperçu</p>
-            <h2 id="shots-title" class="section__title">L’application, telle qu’elle est.</h2>
+            <h2 id="shots-title" class="section__title" data-split>L’application, telle qu’elle est.</h2>
           </header>
           <div class="shots">{{screens}}</div>
         </div>
@@ -148,15 +155,16 @@
 
       <!-- PARCOURS -->
       <section class="section section--forest" aria-labelledby="path-title">
+        <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="wrap split">
           <div class="split__text reveal">
             <p class="eyebrow eyebrow--light">Le parcours</p>
-            <h2 id="path-title" class="section__title">Un voyage par escales.</h2>
+            <h2 id="path-title" class="section__title" data-split>Un voyage par escales.</h2>
             <p>Le parcours avance d’escale en escale. Chaque étape propose ses leçons, et ce que tu apprends revient ensuite dans tes révisions.</p>
             <p>Les repères <strong>A0 et A1</strong> sont disponibles. <strong>A2 et B1</strong> sont en préparation.</p>
             <p class="note note--light">Ces repères organisent le parcours&nbsp;; ils ne constituent pas une certification officielle de niveau.</p>
           </div>
-          <div class="route reveal" data-route>
+          <div class="route reveal" data-route data-steps3d>
             <svg viewBox="0 0 400 430" role="img" aria-labelledby="route-t">
               <title id="route-t">Parcours en quatre étapes : A0 et A1 disponibles, A2 et B1 en préparation.</title>
               <path class="route__path route__path--ghost" d="M60 380C140 370 250 350 270 290S120 220 110 160 220 80 300 40"/>
@@ -179,7 +187,7 @@
         <div class="wrap split split--reverse">
           <div class="split__text reveal">
             <p class="eyebrow">Les variantes</p>
-            <h2 id="var-title" class="section__title">Une langue, des façons de la faire vivre.</h2>
+            <h2 id="var-title" class="section__title" data-split>Une langue, des façons de la faire vivre.</h2>
             <p>Amparà fait une place aux variantes du corse et aux différences entre les formes présentées. Quand deux formes existent, tu les vois côte à côte.</p>
             <p>Le contenu est enrichi progressivement, avec des sources et un travail de relecture.</p>
             <p class="note">«&nbsp;Nord&nbsp;» et «&nbsp;Sud&nbsp;» simplifient une réalité plus riche&nbsp;: les usages varient aussi d’une vallée, d’un village ou d’une famille à l’autre.</p>
@@ -206,7 +214,7 @@
         <div class="wrap split">
           <div class="split__text reveal">
             <p class="eyebrow">La prononciation</p>
-            <h2 id="voice-title" class="section__title">Des voix humaines, jamais inventées.</h2>
+            <h2 id="voice-title" class="section__title" data-split>Des voix humaines, jamais inventées.</h2>
             <p>Pour la prononciation, Amparà privilégie des enregistrements humains attestés. Le fonds actuel est modeste&nbsp;: trois archives de noms de lieux, publiées sous licence libre et créditées.</p>
             <p>Aucune voix de synthèse n’est présentée comme une référence. Tu peux t’enregistrer pour t’entraîner&nbsp;: ton enregistrement reste un exercice, pas un modèle.</p>
           </div>
@@ -222,13 +230,13 @@
         <div class="wrap">
           <header class="section__head reveal">
             <p class="eyebrow">La méthode</p>
-            <h2 id="method-title" class="section__title">Un mot aujourd’hui. Une conversation demain.</h2>
+            <h2 id="method-title" class="section__title" data-split>Un mot aujourd’hui. Une conversation demain.</h2>
             <p class="section__lead">Découvre les mots dans de petites leçons, retrouve-les dans tes révisions et observe ta progression au fil des escales. Amparà donne une place à la régularité, sans transformer chaque séance en marathon.</p>
           </header>
           <ol class="steps">
-            <li class="step reveal"><span class="step__n">1</span><h3>Découvrir</h3><p>Une courte leçon présente quelques mots et leurs formes.</p></li>
-            <li class="step reveal"><span class="step__n">2</span><h3>Pratiquer</h3><p>Des questions avec correction immédiate pour fixer ce que tu viens de voir.</p></li>
-            <li class="step reveal"><span class="step__n">3</span><h3>Retrouver</h3><p>Les mots reviennent dans tes révisions, au moment où tu risques de les oublier.</p></li>
+            <li class="step lg reveal" data-tilt><span class="step__n">1</span><h3>Découvrir</h3><p>Une courte leçon présente quelques mots et leurs formes.</p></li>
+            <li class="step lg reveal" data-tilt><span class="step__n">2</span><h3>Pratiquer</h3><p>Des questions avec correction immédiate pour fixer ce que tu viens de voir.</p></li>
+            <li class="step lg reveal" data-tilt><span class="step__n">3</span><h3>Retrouver</h3><p>Les mots reviennent dans tes révisions, au moment où tu risques de les oublier.</p></li>
           </ol>
           <div class="center reveal"><a class="btn btn--ghost" href="/methode/">En savoir plus sur la méthode</a></div>
         </div>
@@ -242,7 +250,7 @@
           </div>
           <div>
             <p class="eyebrow">Le coach</p>
-            <h2 id="ai-title" class="section__title">Un coup de pouce pour pratiquer.</h2>
+            <h2 id="ai-title" class="section__title" data-split>Un coup de pouce pour pratiquer.</h2>
             <p>Le coach peut t’aider à explorer des formulations et à t’entraîner. Ses réponses restent indicatives&nbsp;: pour une forme précise ou une prononciation, les références linguistiques restent essentielles.</p>
             <p>Pour les traductions simples déjà vérifiées, la réponse vient directement du lexique sourcé plutôt que d’une génération automatique.</p>
           </div>
@@ -254,7 +262,7 @@
         <div class="wrap">
           <header class="section__head reveal">
             <p class="eyebrow">L’offre de lancement</p>
-            <h2 id="offer-title" class="section__title">Une offre claire, dès le départ.</h2>
+            <h2 id="offer-title" class="section__title" data-split>Une offre claire, dès le départ.</h2>
           </header>
           <!--@include offer-->
         </div>
@@ -265,7 +273,7 @@
         <div class="wrap wrap--narrow">
           <header class="section__head reveal">
             <p class="eyebrow">Questions</p>
-            <h2 id="faq-title" class="section__title">Questions fréquentes</h2>
+            <h2 id="faq-title" class="section__title" data-split>Questions fréquentes</h2>
           </header>
           <!--@include faq-->
         </div>
@@ -273,8 +281,9 @@
 
       <!-- FIN -->
       <section class="cta-band" aria-labelledby="end-title">
+        <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="wrap cta-band__inner reveal">
-          <h2 id="end-title">Prêt pour la première escale&nbsp;?</h2>
+          <h2 id="end-title" data-split>Prêt pour la première escale&nbsp;?</h2>
           <!--@if preopen-->
           <p>Amparà prépare son ouverture. En attendant, découvre comment fonctionne la méthode.</p>
           <div class="hero__actions">

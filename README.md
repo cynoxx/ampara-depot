@@ -1,7 +1,7 @@
 # Amparà — site vitrine
 
 Site statique de présentation d’Amparà (Vite, HTML/CSS/JS, île 3D three.js chargée à part).
-Thème sombre « vue aérienne » : forêt profonde, panneaux en verre dépoli, accent citron ; maquette de tablette illustrée (`ile-aerienne.jpg` régénérée par `npm run images`).
+Thème sombre « vue aérienne », liquid glass (reflets mobiles, réfraction SVG sous Chromium), deux scènes 3D (île + escales en spirale), titres animés, bandeau défilant ; maquette de tablette illustrée (`ile-aerienne.jpg` régénérée par `npm run images`).
 Indépendant de l’application : aucun secret, aucun backend, aucun cookie, aucune requête tierce.
 
 ## Commandes
