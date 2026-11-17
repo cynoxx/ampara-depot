@@ -19,7 +19,7 @@ export default {
   appUrl: '',
 
   // Adresse e-mail de contact / support réellement relevée.
-  contactEmail: 'cgptutilejc@gmail.com',
+  contactEmail: 'ampara.corsu@gmail.com',
 
   // Éditeur du site (mentions légales).
   publisher: {
