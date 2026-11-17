@@ -401,7 +401,13 @@ export function mountIsland(stage, { reduceMotion, pins }) {
   const pinEls = (pins && pins.items) ? pins.items.map((item) => {
     const el = document.createElement('div');
     el.className = 'pin' + (item.on ? ' pin--on' : '');
-    el.innerHTML = `<span class="pin__dot"></span><span class="pin__body"><b>${item.label}</b><small>${item.sub}</small></span>`;
+    // Construction DOM sans innerHTML (aucune interprétation de HTML).
+    const dot = document.createElement('span'); dot.className = 'pin__dot';
+    const body = document.createElement('span'); body.className = 'pin__body';
+    const b = document.createElement('b'); b.textContent = item.label;
+    const small = document.createElement('small'); small.textContent = item.sub;
+    body.append(b, small);
+    el.append(dot, body);
     pins.container.append(el);
     return el;
   }) : [];
