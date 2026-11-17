@@ -13,7 +13,7 @@ export default {
 
   // Adresse publique définitive du site, sans « / » final (ex. 'https://www.exemple.fr').
   // Sert aux URL canoniques, à l'aperçu social et au sitemap.
-  siteUrl: 'https://ampara-site-nu.vercel.app',
+  siteUrl: 'https://ampara-corsu.vercel.app',
 
   // Adresse publique de l'application (destination de « Ouvrir Amparà »).
   appUrl: '',
