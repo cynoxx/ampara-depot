@@ -18,7 +18,7 @@ const links = new Set();
 
 for (const [w, h, scheme] of [[390, 844, 'light'], [1280, 860, 'light'], [1280, 860, 'dark']]) {
   console.log(`\n${w}px, ${scheme}`);
-  const ctx = await browser.newContext({ viewport: { width: w, height: h }, colorScheme: scheme });
+  const ctx = await browser.newContext({ viewport: { width: w, height: h }, colorScheme: scheme, bypassCSP: true });
   for (const path of PAGES) {
     const page = await ctx.newPage();
     const errors = [];
