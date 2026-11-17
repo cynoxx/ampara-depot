@@ -52,6 +52,7 @@ function render(html, key) {
   const hasAudio = audioAvailable();
   const hasShots = Array.isArray(config.screenshots) && config.screenshots.length > 0;
   const flags = {
+    nocontact: !String(config.contactEmail || '').trim(),
     open,
     preopen: !open,
     draft: !ok,
