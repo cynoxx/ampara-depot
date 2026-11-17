@@ -13,13 +13,13 @@ export default {
 
   // Adresse publique définitive du site, sans « / » final (ex. 'https://www.exemple.fr').
   // Sert aux URL canoniques, à l'aperçu social et au sitemap.
-  siteUrl: '',
+  siteUrl: 'https://ampara-site-nu.vercel.app',
 
   // Adresse publique de l'application (destination de « Ouvrir Amparà »).
   appUrl: '',
 
   // Adresse e-mail de contact / support réellement relevée.
-  contactEmail: '',
+  contactEmail: 'cgptutilejc@gmail.com',
 
   // Éditeur du site (mentions légales).
   publisher: {
@@ -32,14 +32,15 @@ export default {
 
   // Hébergeur du site (mentions légales).
   host: {
-    name: '',
-    address: '',
-    phone: '',
-    logRetention: '', // Durée de conservation des journaux techniques (selon l'hébergeur)
+    name: 'Vercel Inc.',
+    address: '440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis',
+    // Vercel ne publie pas de numéro dans sa politique officielle : moyen de contact publié à la place.
+    phone: 'aucun numéro publié par Vercel ; contact : privacy@vercel.com',
+    logRetention: 'Vercel n’indique pas de durée précise ; il conserve ces données « pour la durée minimale nécessaire » à ses obligations, puis les supprime ou les anonymise',
   },
 
   privacy: {
-    emailRetention: '', // Durée de conservation des échanges par e-mail
+    emailRetention: '3 ans à compter du dernier échange', // Durée de conservation des échanges par e-mail
   },
 
   // Informations nécessaires avant l'ouverture des ventes.
