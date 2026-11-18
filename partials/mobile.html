@@ -1,0 +1,46 @@
+      <!-- APPLICATION MOBILE : liste d'attente App Store / Google Play + installation immédiate -->
+      <section class="section section--forest mobile" id="app-mobile" aria-labelledby="mobile-title">
+        <div class="wrap mobile__grid">
+          <div class="mobile__copy reveal">
+            <p class="eyebrow">Application mobile</p>
+            <h2 id="mobile-title" class="section__title" data-split>Bientôt sur iPhone et Android.</h2>
+            <p class="mobile__lead">Les applications App Store et Google Play sont en préparation. Laisse ton e-mail&nbsp;: on te prévient le jour de la sortie.</p>
+            <ul class="mobile__soon" aria-label="Plateformes à venir">
+              <li><span class="mobile__dot" aria-hidden="true"></span> iPhone · bientôt</li>
+              <li><span class="mobile__dot" aria-hidden="true"></span> Android · bientôt</li>
+            </ul>
+
+            <form class="mobile__form glass" data-waitlist data-endpoint="{{appUrl}}/api/waitlist" novalidate>
+              <label class="mobile__label" for="wl-email">Ton adresse e-mail</label>
+              <div class="mobile__row">
+                <input id="wl-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="ton@email.fr" aria-describedby="wl-status">
+                <button class="btn btn--primary" type="submit" data-waitlist-submit>Me prévenir</button>
+              </div>
+              <fieldset class="mobile__platforms">
+                <legend>Ton téléphone <span>(facultatif)</span></legend>
+                <label><input type="radio" name="platform" value="ios"> iPhone</label>
+                <label><input type="radio" name="platform" value="android"> Android</label>
+                <label><input type="radio" name="platform" value="both"> Les deux</label>
+              </fieldset>
+              <label class="mobile__consent">
+                <input type="checkbox" name="consent" required>
+                <span>J’accepte de recevoir un e-mail à la sortie de l’application mobile. Désinscription à tout moment. <a href="/confidentialite/#liste-attente">Données et droits</a></span>
+              </label>
+              <div class="mobile__trap" aria-hidden="true"><label>Ne pas remplir <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+              <p id="wl-status" class="mobile__status" role="status" aria-live="polite"></p>
+              <noscript><p class="mobile__status">Active JavaScript pour t’inscrire, ou écris-nous à {{mail}}.</p></noscript>
+            </form>
+          </div>
+
+          <aside class="mobile__now glass reveal" aria-labelledby="now-title">
+            <p class="tag">Disponible maintenant</p>
+            <h3 id="now-title">Pas besoin d’attendre.</h3>
+            <p>Amparà fonctionne déjà sur ton téléphone, dans le navigateur. Installe-la sur ton écran d’accueil&nbsp;: elle s’ouvre comme une application.</p>
+            <ol class="mobile__steps">
+              <li><b>iPhone</b>&nbsp;: dans Safari, touche «&nbsp;Partager&nbsp;» puis «&nbsp;Sur l’écran d’accueil&nbsp;».</li>
+              <li><b>Android</b>&nbsp;: dans Chrome, menu ⋮ puis «&nbsp;Installer l’application&nbsp;».</li>
+            </ol>
+            <a class="btn btn--sun" href="{{appUrl}}">Accéder à l’app</a>
+          </aside>
+        </div>
+      </section>

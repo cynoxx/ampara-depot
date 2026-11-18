@@ -117,3 +117,41 @@ if (steps && webglAvailable() && 'IntersectionObserver' in window) {
   }, { rootMargin: '400px 0px' });
   io.observe(steps);
 }
+
+/* ---------- Liste d'attente de l'application mobile ---------- */
+const waitlist = document.querySelector('[data-waitlist]');
+if (waitlist) {
+  const status = waitlist.querySelector('.mobile__status');
+  const submit = waitlist.querySelector('[data-waitlist-submit]');
+  const say = (msg, kind = '') => { status.textContent = msg; status.dataset.kind = kind; };
+  const KEY = 'ampara_waitlist_mobile';
+  let done = false;
+  try { if (localStorage.getItem(KEY)) { done = true; waitlist.classList.add('is-done'); submit.disabled = true; say('Tu es sur la liste : on te prévient dès la sortie.', 'ok'); } } catch { /* stockage indisponible */ }
+  waitlist.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (done) return;
+    const data = new FormData(waitlist);
+    const input = waitlist.elements.namedItem('email');
+    const email = String(data.get('email') || '').trim();
+    if (!email || !input.checkValidity()) { say('Indique une adresse e-mail valide.', 'error'); input.focus(); return; }
+    if (!data.get('consent')) { say('Coche la case pour accepter d’être prévenu(e).', 'error'); return; }
+    submit.disabled = true;
+    say('Inscription…');
+    try {
+      const r = await fetch(waitlist.dataset.endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, platform: data.get('platform') || '', consent: true, source: 'site', website: data.get('website') || '' }),
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(j.error || 'Inscription impossible pour le moment.');
+      done = true;
+      waitlist.classList.add('is-done');
+      say(j.already ? 'Tu étais déjà inscrit(e) : on te prévient dès la sortie.' : 'C’est noté ! On te prévient dès la sortie. En attendant, Amparà marche déjà sur ton téléphone.', 'ok');
+      try { localStorage.setItem(KEY, new Date().toISOString()); } catch { /* stockage indisponible */ }
+    } catch (err) {
+      say(err instanceof TypeError ? 'Connexion impossible. Vérifie ta connexion et réessaie.' : err.message, 'error');
+      submit.disabled = false;
+    }
+  });
+}
