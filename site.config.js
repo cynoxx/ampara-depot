@@ -9,7 +9,7 @@ export default {
   // 'preouverture' : aucune vente, CTA « Découvrir la méthode » / « Voir l'offre ».
   // 'ouvert'       : CTA vers l'application. Refusé par `npm run check`
   //                  tant que les champs « ouverture » ci-dessous sont vides.
-  status: 'preouverture',
+  status: 'ouvert',
 
   // Adresse publique définitive du site, sans « / » final (ex. 'https://www.exemple.fr').
   // Sert aux URL canoniques, à l'aperçu social et au sitemap.
@@ -47,7 +47,7 @@ export default {
   offer: {
     freeScope: 'la première escale « Salutations et présentation » (5 leçons), avec son carnet de mots et ses révisions espacées ; le coach IA et les escales suivantes sont réservés à Premium', // Contenu exact de la découverte gratuite
     aiQuota: '40 échanges par jour avec le coach et les conversations IA, remis à zéro chaque jour à minuit (heure de Paris) ; à la limite, un message l’indique et les leçons, révisions et le dictionnaire restent accessibles sans limite', // Limite d'usage du coach IA
-    taxDisplay: '',    // Mention fiscale : en micro-entreprise en franchise, « TVA non applicable, art. 293 B du CGI »
+    taxDisplay: 'TTC, taxes calculées, collectées et reversées par Stripe (Link), revendeur officiel', // Mention fiscale
     mediator: '',      // Médiateur de la consommation (nom, site) — obligatoire pour vendre à des particuliers
     refundPolicy: 'Tu disposes d’un droit de rétractation de 14 jours à compter de la souscription. Pour l’exercer, il suffit d’écrire à ampara.corsu@gmail.com (aucun motif à donner) : l’abonnement est résilié et, si un paiement a déjà eu lieu, il est intégralement remboursé sous 14 jours sur le moyen de paiement utilisé. Au-delà, la résiliation prend effet à la fin de la période payée, sans remboursement au prorata.', // Modalités de rétractation / remboursement
   },
