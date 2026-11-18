@@ -21,6 +21,7 @@ const OPENING = [
   ['offer.aiQuota', 'Quota du coach IA et comportement à la limite'],
   ['offer.taxDisplay', 'Mention fiscale du prix (TTC/HT)'],
   ['offer.refundPolicy', 'Modalités de rétractation / remboursement'],
+  ['offer.mediator', 'Médiateur de la consommation (obligatoire pour la vente aux particuliers)'],
 ];
 
 export const get = (obj, path) => path.split('.').reduce((o, k) => (o == null ? o : o[k]), obj);

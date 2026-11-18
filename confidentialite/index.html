@@ -45,14 +45,16 @@
             <p>Ton message et ton adresse e-mail sont utilisés uniquement pour te répondre. Durée de conservation&nbsp;: {{f:privacy.emailRetention|durée de conservation des échanges}}.</p>
 
             <h2>L’application Amparà</h2>
-            <p>L’application n’est pas encore ouverte au public. Elle aura sa propre politique de confidentialité, publiée avant l’ouverture. À titre d’information, la version actuellement développée s’appuie sur les services suivants&nbsp;:</p>
+            <p>Responsable du traitement&nbsp;: {{f:publisher.name|nom légal du responsable}}. Les données sont utilisées uniquement pour faire fonctionner ton compte et ton abonnement&nbsp;; elles ne sont ni vendues ni utilisées pour de la publicité.</p>
             <ul>
-              <li><strong>Firebase (Google)</strong> — compte utilisateur et sauvegarde de la progression.</li>
-              <li><strong>Un prestataire d’e-mail</strong> — envoi des codes de connexion.</li>
-              <li><strong>Stripe</strong> — paiement et gestion de l’abonnement&nbsp;; Amparà n’a pas accès au numéro de carte.</li>
-              <li><strong>Google Gemini</strong> — les messages adressés au coach IA sont transmis à ce service pour générer une réponse.</li>
+              <li><strong>Compte</strong> (adresse e-mail, mot de passe chiffré par Google Firebase Authentication)&nbsp;: pour te connecter. Base légale&nbsp;: exécution du contrat.</li>
+              <li><strong>Code de vérification</strong>&nbsp;: envoyé à ton adresse e-mail depuis ampara.corsu@gmail.com (Google). Le code n’est pas conservé en clair et expire après 10 minutes.</li>
+              <li><strong>Progression</strong> (leçons terminées, révisions, erreurs, objectifs, enregistrements que tu fais pour t’entraîner)&nbsp;: stockée dans Google Firestore, accessible uniquement par ton compte.</li>
+              <li><strong>Paiement</strong>&nbsp;: traité par Stripe. Amparà ne reçoit jamais ton numéro de carte. Les factures sont conservées le temps imposé par la loi (10 ans).</li>
+              <li><strong>Coach IA</strong>&nbsp;: les messages que tu lui adresses sont transmis à Google Gemini pour générer une réponse. N’y mets pas d’informations personnelles sensibles.</li>
+              <li><strong>Hébergement</strong>&nbsp;: Vercel (application, voix enregistrées). Certains prestataires (Google, Stripe, Vercel) sont établis aux États-Unis&nbsp;; les transferts sont encadrés par leurs clauses contractuelles et le cadre UE–États-Unis de protection des données.</li>
             </ul>
-            <p>Les finalités, bases légales, durées de conservation et transferts éventuels hors de l’Union européenne seront précisés dans cette politique avant toute ouverture.</p>
+            <p>Durée de conservation&nbsp;: tant que ton compte existe, puis suppression sous 30 jours après ta demande (hors factures). Aucun cookie publicitaire&nbsp;; l’app utilise uniquement les cookies nécessaires à la connexion.</p>
 
             <h2>Tes droits</h2>
             <p>Tu disposes d’un droit d’accès, de rectification, d’effacement, d’opposition, de limitation et de portabilité sur les données te concernant. Pour l’exercer, écris à {{mail}}. Tu peux aussi adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes" rel="noopener" target="_blank">CNIL<span class="sr-only"> (nouvel onglet)</span></a>.</p>

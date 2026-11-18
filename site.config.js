@@ -46,9 +46,10 @@ export default {
   // Informations nécessaires avant l'ouverture des ventes.
   offer: {
     freeScope: 'la première escale « Salutations et présentation » (5 leçons), avec son carnet de mots et ses révisions espacées ; le coach IA et les escales suivantes sont réservés à Premium', // Contenu exact de la découverte gratuite
-    aiQuota: '',       // Limite d'usage du coach IA et comportement à la limite
-    taxDisplay: '',    // Mention fiscale validée pour le prix (ex. « TTC »)
-    refundPolicy: '',  // Modalités de rétractation / remboursement validées
+    aiQuota: '40 échanges par jour avec le coach et les conversations IA, remis à zéro chaque jour à minuit (heure de Paris) ; à la limite, un message l’indique et les leçons, révisions et le dictionnaire restent accessibles sans limite', // Limite d'usage du coach IA
+    taxDisplay: '',    // Mention fiscale : en micro-entreprise en franchise, « TVA non applicable, art. 293 B du CGI »
+    mediator: '',      // Médiateur de la consommation (nom, site) — obligatoire pour vendre à des particuliers
+    refundPolicy: 'Tu disposes d’un droit de rétractation de 14 jours à compter de la souscription. Pour l’exercer, il suffit d’écrire à ampara.corsu@gmail.com (aucun motif à donner) : l’abonnement est résilié et, si un paiement a déjà eu lieu, il est intégralement remboursé sous 14 jours sur le moyen de paiement utilisé. Au-delà, la résiliation prend effet à la fin de la période payée, sans remboursement au prorata.', // Modalités de rétractation / remboursement
   },
 
   // Passer à true uniquement après relecture des textes par le propriétaire
