@@ -58,7 +58,12 @@ export default {
 
   // Captures réelles de l'application, à déposer dans public/captures/.
   // Exemple : { src: '/captures/parcours.webp', alt: 'Le parcours en escales', caption: 'Parcours' }
-  screenshots: [],
+  screenshots: [
+    { src: '/captures/lecon.webp', alt: 'Leçon 1 de l’app : Bonghjornu, Bonjour, un repère de prononciation et un exemple', caption: 'Une leçon courte : le mot, un exemple, un repère de prononciation' },
+    { src: '/captures/quiz.webp', alt: 'Exercice : la bonne réponse Bonghjornu est validée, avec l’explication « Bravo, bonne réponse ! »', caption: 'Un exercice qui explique la réponse' },
+    { src: '/captures/variante.webp', alt: 'Bouton Variante : Cismontanu Bona notte, Pumontinu Bona notti', caption: 'Le Nord et le Sud, quand la variante est confirmée' },
+    { src: '/captures/revisions.webp', alt: 'Révisions intelligentes : répétition espacée sur 1, 3, 7, 14 et 30 jours', caption: 'Des révisions qui reviennent au bon moment' },
+  ],
 
   lastUpdated: '17 novembre 2026',
 };
