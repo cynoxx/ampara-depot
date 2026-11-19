@@ -155,3 +155,20 @@ if (waitlist) {
     }
   });
 }
+
+// Provenance : les paramètres UTM du lien (vidéo, pub, créateur) suivent le visiteur jusqu'à l'app,
+// qui les joint à la commande. Sans eux, impossible de savoir quelle vidéo a vendu.
+(() => {
+  const q = new URLSearchParams(location.search);
+  const keep = new URLSearchParams();
+  for (const k of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'ref']) {
+    const v = q.get(k);
+    if (v) keep.set(k, v.slice(0, 60));
+  }
+  if (![...keep.keys()].length) return;
+  document.querySelectorAll('a[href^="https://ampara-app-virid.vercel.app"]').forEach((a) => {
+    const u = new URL(a.href);
+    keep.forEach((v, k) => u.searchParams.set(k, v));
+    a.href = u.toString();
+  });
+})();
