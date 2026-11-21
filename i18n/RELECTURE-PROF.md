@@ -287,3 +287,26 @@ Chaque mot corse a été cherché dans INFCOR (ADECEC), mais les tournures n’o
 | 278 | Exercice : la bonne réponse Bonghjornu est validée, avec l’explication « Bravo, bonne réponse ! » | Eserciziu : a bona risposta Bonghjornu hè validata, cù a spiegazione « Bravo, bonne réponse ! » |
 | 279 | Bouton Variante : Cismontanu Bona notte, Pumontinu Bona notti | Scelta di a variante : Cismontanu Bona notte, Pumontinu Bona notti |
 | 280 | Révisions intelligentes : répétition espacée sur 1, 3, 7, 14 et 30 jours | Ripassate intelligente : ripetizione spaziata nant’à 1, 3, 7, 14 è 30 ghjorni |
+
+## Mise à jour du 21 novembre : offre (1 mois, 40 €) et niveaux A2 à B2
+
+Phrases corses modifiées (seuls les mots changés sont nouveaux : *un mese rigalatu*, *u mese di prova*, *40 €*, *A2, B1 è B2*) :
+
+- A prima tappa hè gratisi. Premium : un mese rigalatu, po 40 € à l’annu, da annullà quandu tù voli.
+- Una scuperta gratisi per pruvà u metudu, po Premium : un mese rigalatu, po 40 € à l’annu.
+- Cumu si passa u mese di prova.
+- G1–30
+- Tuttu Premium hè apertu per un mese. Poi annullà quandu tù voli da u to spaziu di fatturazione.
+- G30
+- Senza annullazione, 40 € sò prelevati per un annu, po l’abbunamentu si rinnova ogni annu. S’è tù hai annullatu, ùn sì micca prelevatu.
+- Scuperta gratisi limitata, po Amparà Premium : 1 mese rigalatu cù carta dumandata à u principiu, po 40 € à l’annu, rinnuvati autumaticamente salvu annullazione.
+- Tocca « Apri l’app », crea u to contu è valida u codice ricevutu per e-mail : a prima tappa hè gratisi. Premium s’attiva da l’app, cù un mese rigalatu.
+- Permette di passà autumaticamente à l’abbunamentu annuale di 40 € à a fine di u mese di prova. S’è tù annulli prima di a fine di a prova, ùn sì micca prelevatu.
+- 1 mese rigalatu
+- 1 mese per scopre Amparà Premium. Po 40 € à l’annu.
+- Principià u mo mese gratisi
+- Iè, cù Premium : e tappe A2, B1 è B2 sò dispunibuli.
+- I livelli A2, B1 è B2 sò dispunibuli ?
+- Percorsu in quattru tappe : A0, A1, A2 è B1 dispunibuli, po B2.
+- da A0 à B2
+- Tappe A0 → B2
