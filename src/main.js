@@ -1,8 +1,11 @@
 import './styles.css';
 import { initFx } from './fx.js';
+import { applyLanguage } from './lang.js';
 
 const root = document.documentElement;
 root.classList.add('js');
+// La langue d'abord : les animations de titres découpent ensuite le texte affiché.
+applyLanguage();
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 initFx(reduceMotion);
