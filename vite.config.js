@@ -4,8 +4,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import config from './site.config.js';
 import { get, missing, publishable } from './scripts/launch-check.js';
+import { translateHtml } from './scripts/i18n-core.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
+
+// Le site est en corse par défaut : chaque texte français connu de i18n/co.json est remplacé à la
+// construction. Le bouton « Lire cette page en français » remet le français (src/lang.js).
+// Les textes légaux restent en français (seuls l'en-tête et le pied de page sont traduits).
+const CO = JSON.parse(fs.readFileSync(path.join(root, 'i18n', 'co.json'), 'utf8'));
+const LEGAL = ['mentions-legales', 'confidentialite', 'conditions', 'credits'];
 
 // Pages publiques : clé → fichier source.
 const PAGES = {
@@ -75,6 +82,11 @@ function render(html, key) {
     return (not ? !flags[flag] : flags[flag]) ? body : '';
   });
 
+  // Corse par défaut (avant les champs {{…}}, pour que les phrases restent entières)
+  html = translateHtml(html, CO);
+  const corsican = !LEGAL.includes(key);
+  html = html.replace('<html lang="fr">', `<html lang="${corsican ? 'co' : 'fr'}">`);
+
   // Page courante dans la navigation
   html = html.replace(new RegExp(`data-nav="${key}"`, 'g'), `data-nav="${key}" aria-current="page"`);
 
@@ -84,7 +96,7 @@ function render(html, key) {
   const abs = (p) => (config.siteUrl ? config.siteUrl.replace(/\/$/, '') + p : p);
   const head = [
     `<meta property="og:type" content="website">`,
-    `<meta property="og:locale" content="fr_FR">`,
+    `<meta property="og:locale" content="${corsican ? 'co_FR' : 'fr_FR'}">`,
     `<meta property="og:site_name" content="${esc(config.brand)}">`,
     `<meta property="og:title" content="${title}">`,
     `<meta property="og:description" content="${description}">`,

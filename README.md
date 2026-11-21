@@ -51,3 +51,11 @@ scripts/       contrôle de publication, vérification, génération d’images
 `dist/` est un site statique : Cloudflare Pages ou Netlify (offres gratuites autorisant un usage commercial —
 conditions à revérifier au moment du choix). Commande de build `npm run build`, dossier `dist`.
 Les deux lisent `public/_headers` et servent `404.html`.
+
+## Langue : corse par défaut
+
+- Le site est construit en corse : chaque texte français connu de `i18n/co.json` est remplacé à la construction
+  (`scripts/i18n-core.mjs`, appelé par `vite.config.js`). Les textes légaux restent en français.
+- Le bouton « Lire cette page en français » (barre du haut) remet le français et mémorise le choix (`src/lang.js`).
+- Nouveau texte sur le site : `node scripts/i18n-extract.mjs` liste les textes, puis ajouter la traduction dans `i18n/co.json`.
+- Relecture : `node scripts/i18n-relecture.mjs` produit `i18n/RELECTURE-PROF.md` (français et corse, numérotés).
