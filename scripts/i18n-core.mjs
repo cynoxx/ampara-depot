@@ -1,7 +1,7 @@
 // Traduction du site, partagée par la construction (vite.config.js) et les outils.
 // Le dictionnaire i18n/co.json associe chaque texte français (espaces normalisés) à sa version corse.
 
-const SKIP = /<(script|style|svg|template|textarea)\b[\s\S]*?<\/\1>/gi;
+const SKIP = /<(script|style|template|textarea)\b[\s\S]*?<\/\1>/gi;
 const ATTRS = ['aria-label', 'alt', 'title', 'placeholder'];
 export const norm = (s) => s.replace(/\s+/g, ' ').trim();
 const isText = (s) => /[A-Za-zÀ-ÿ]/.test(s) && !/^\{\{[^}]+\}\}$/.test(s.trim()) && !/^<!--/.test(s.trim());
@@ -24,16 +24,15 @@ export function textsOf(html) {
 
 /** Remplace dans le HTML chaque texte connu du dictionnaire par sa version corse. */
 export function translateHtml(html, dict) {
-  const parts = html.split(/(<(?:script|style|svg|template|textarea)\b[\s\S]*?<\/(?:script|style|svg|template|textarea)>)/i);
+  const parts = html.split(/(<(?:script|style|template|textarea)\b[\s\S]*?<\/(?:script|style|template|textarea)>)/i);
   return parts.map((part, i) => {
     if (i % 2 === 1) return part; // blocs à ne pas toucher
-    let h = part.replace(/>([^<>]+)</g, (whole, text) => {
-      const key = norm(text);
-      const co = dict[key];
+    let h = part.replace(/(^|>)([^<>]+)(?=<|$)/g, (whole, open, text) => {
+      const co = dict[norm(text)];
       if (!co) return whole;
       const lead = text.match(/^\s*/)[0];
       const trail = text.match(/\s*$/)[0];
-      return `>${lead}${co}${trail}<`;
+      return `${open}${lead}${co}${trail}`;
     });
     h = h.replace(new RegExp(`(\\s(?:${ATTRS.join('|')})=")([^"]+)(")`, 'g'), (whole, a, text, b) => {
       const co = dict[norm(text)];

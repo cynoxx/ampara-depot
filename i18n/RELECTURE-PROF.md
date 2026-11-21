@@ -268,3 +268,22 @@ Chaque mot corse a été cherché dans INFCOR (ADECEC), mais les tournures n’o
 | 259 | Tu entends chaque mot avec sa voix. Ses enregistrements restent privés, et il peut tout effacer. | Senti ogni parolla cù a so voce. I so arregistramenti fermanu privati, è pò scancellà tuttu. |
 | 260 | Inviter un proche depuis l’app | Invità una persona cara da l’app |
 | 261 | Une question sur l’application ou l’offre, une forme à corriger, une proposition d’enregistrement ? Écris-nous : nous serons heureux de te lire. | Una dumanda nant’à l’appiecazione o l’offerta, una forma da curreghje, un arregistramentu da prupone ? Scrivici : saremu felici di leghjeti. |
+| 262 | Disponible | Dispunibule |
+| 263 | En préparation | In preparazione |
+| 264 | Nord | Cismonte |
+| 265 | Sud | Pumonte |
+| 266 | Parcours en quatre étapes : A0 et A1 disponibles, A2 et B1 en préparation. | Percorsu in quattru tappe : A0 è A1 dispunibuli, A2 è B1 in preparazione. |
+| 267 | Source et licence | Fonte è licenza |
+| 268 | Écouter sur Wikimedia Commons | Ascultà nant’à Wikimedia Commons |
+| 269 | (Bonifacio, nouvel onglet) | (Bonifacio, nova finestra) |
+| 270 | (Bustanico, nouvel onglet) | (Bustanico, nova finestra) |
+| 271 | (Serriera, nouvel onglet) | (Serriera, nova finestra) |
+| 272 | Une leçon courte : le mot, un exemple, un repère de prononciation | Una lezzione corta : a parolla, un esempiu, un aiutu per a prununzia |
+| 273 | Un exercice qui explique la réponse | Un eserciziu chì spiega a risposta |
+| 274 | Le Nord et le Sud, quand la variante est confirmée | U Cismonte è u Pumonte, quandu a variante hè cunfirmata |
+| 275 | Des révisions qui reviennent au bon moment | Ripassate chì tornanu à u bon mumentu |
+| 276 | Illustration d’une île stylisée vue du ciel | Illustrazione d’un’isula stilizata vista da u celu |
+| 277 | Leçon 1 de l’app : Bonghjornu, Bonjour, un repère de prononciation et un exemple | Lezzione 1 di l’app : Bonghjornu, Bonjour, un aiutu per a prununzia è un esempiu |
+| 278 | Exercice : la bonne réponse Bonghjornu est validée, avec l’explication « Bravo, bonne réponse ! » | Eserciziu : a bona risposta Bonghjornu hè validata, cù a spiegazione « Bravo, bonne réponse ! » |
+| 279 | Bouton Variante : Cismontanu Bona notte, Pumontinu Bona notti | Scelta di a variante : Cismontanu Bona notte, Pumontinu Bona notti |
+| 280 | Révisions intelligentes : répétition espacée sur 1, 3, 7, 14 et 30 jours | Ripassate intelligente : ripetizione spaziata nant’à 1, 3, 7, 14 è 30 ghjorni |

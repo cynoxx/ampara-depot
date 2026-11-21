@@ -161,6 +161,9 @@ function render(html, key) {
       .join('\n'),
   );
 
+  // Deuxième passe : textes des blocs générés ci-dessus (audio, captures).
+  html = translateHtml(html, CO);
+
   const left = html.match(/\{\{[^}]*\}\}|<!--@[^>]*-->/);
   if (left) throw new Error(`Jeton non traité dans ${key} : ${left[0]}`);
   return html;
