@@ -21,7 +21,7 @@ function remember(lang) {
 function toFrench() {
   const back = new Map(Object.entries(co).map(([fr, c]) => [norm(decode(c)), decode(fr)]));
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-    acceptNode: (n) => (n.parentElement?.closest('script,style,svg,[data-no-i18n]') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT),
+    acceptNode: (n) => (n.parentElement?.closest('script,style,[data-no-i18n]') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT),
   });
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     const fr = back.get(norm(n.nodeValue));
